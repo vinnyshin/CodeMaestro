@@ -8,8 +8,9 @@ void stack<stack_value_type>::push(stack_value_type element) {
 template<typename stack_value_type>
 stack_value_type stack<stack_value_type>::pop() {
     if (m_top != -1) {
-        return m_data[m_top--];    
-    } else {
+        return m_data[m_top--];
+    }
+    else {
         std::cout << "ERROR: pop() stack empty" << std::endl;
         return -1;
     }
@@ -23,8 +24,9 @@ size_t stack<stack_value_type>::size() {
 template<typename stack_value_type>
 bool stack<stack_value_type>::empty() {
     if (m_top != -1) {
-        return false;    
-    } else {
+        return false;
+    }
+    else {
         return true;
     }
 }
@@ -33,7 +35,8 @@ template<typename stack_value_type>
 stack_value_type stack<stack_value_type>::top() {
     if (m_top != -1) {
         return m_data[m_top];
-    } else {
+    }
+    else {
         std::cout << "ERROR: top() stack empty" << std::endl;
         return -1;
     }

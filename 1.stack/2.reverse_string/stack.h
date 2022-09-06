@@ -14,7 +14,7 @@ private:
 
 public:
     stack(size_t capacity) : m_capacity(capacity), m_top(-1) {};
-    
+
     void push(stack_value_type element);
     stack_value_type pop();
     stack_value_type top();
