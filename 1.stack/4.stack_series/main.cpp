@@ -16,7 +16,7 @@ int main(int argc, char const *argv[]) {
 
     int series_cnt = 1, target, prev = -1, N = 1;
     stack<int> stk{MAX_N};
-    char buffer[20];
+    char buffer[200000];
     int buffer_size = 0;
 
     cin >> series_cnt;
